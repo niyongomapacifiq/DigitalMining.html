@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Hazard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>Hazard Reporting Form</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="form.html">Report Hazard</a>
+    </nav>
+
+</header>
+<section class="form-section frame">
+
+    <div class="form-container">
+
+        <h2>Mining Hazard Reporting System</h2>
+
+        <p>
+            Report unsafe mining conditions, environmental risks,
+            tunnel collapses, gas leaks, or equipment failures.
+            This system helps improve worker safety and emergency response.
+        </p>
+
+        <form id="hazardForm">
+
+            <!-- Worker Name -->
+            <label>Worker Full Name</label>
+            <input type="text" id="name" placeholder="Enter full name" required>
+
+            <!-- Worker ID -->
+            <label>Worker ID</label>
+            <input type="text" id="workerid" placeholder="Enter worker ID" required>
+
+            <!-- Mine Site -->
+            <label>Mining Site</label>
+
+            <select id="site" required>
+
+                <option value="">Select Mining Site</option>
+                <option>Nyakabingo Mine</option>
+                <option>Rutongo Mine</option>
+                <option>Rwinkwavu Mine</option>
+                <option>Musanze Mining Site</option>
+                <option>Lake Kivu Gas Site</option>
+
+            </select>
+
+            <!-- Location -->
+            <label>Specific Location</label>
+            <input type="text" id="location"
+            placeholder="Tunnel / Section / Area" required>
+
+            <!-- Hazard -->
+            <label>Hazard Type</label>
+
+            <select id="hazard" required>
+
+                <option value="">Select Hazard</option>
+
+                <option>Gas Leak</option>
+                <option>Structural Collapse Risk</option>
+                <option>Flooding</option>
+                <option>Equipment Failure</option>
+                <option>Poor Ventilation</option>
+                <option>Environmental Pollution</option>
+                <option>Illegal Mining Activity</option>
+
+            </select>
+
+            <!-- Severity -->
+            <label>Hazard Severity</label>
+
+            <select id="severity" required>
+
+                <option value="">Select Severity</option>
+
+                <option>Low Risk</option>
+                <option>Medium Risk</option>
+                <option>High Risk</option>
+                <option>Critical Emergency</option>
+
+            </select>
+
+            <!-- Date -->
+            <label>Date of Incident</label>
+            <input type="date" id="date" required>
+
+            <!-- Time -->
+            <label>Time</label>
+            <input type="time" id="time" required>
+
+            <!-- Description -->
+            <label>Hazard Description</label>
+
+            <textarea id="description"
+            rows="6"
+            placeholder="Describe the incident or danger..."
+            required></textarea>
+
+            <!-- File Upload -->
+            <label>Upload Evidence (Optional)</label>
+            <input type="file" id="file">
+
+            <!-- Emergency -->
+            <div class="checkbox-area">
+
+                <input type="checkbox" id="emergency">
+
+                <span>
+                    Immediate Emergency Response Required
+                </span>
+
+            </div>
+
+            <!-- Button -->
+            <button type="submit">
+                Submit Safety Report
+            </button>
+
+        </form>
+
+        <div id="message"></div>
+
+    </div>
+
+</section>
