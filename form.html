@@ -16,6 +16,7 @@
 
     <nav>
         <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="form.html">Report Hazard</a>
     </nav>
 
@@ -34,15 +35,13 @@
 
         <form id="hazardForm">
 
-            <!-- Worker Name -->
+            
             <label>Worker Full Name</label>
             <input type="text" id="name" placeholder="Enter full name" required>
 
-            <!-- Worker ID -->
             <label>Worker ID</label>
             <input type="text" id="workerid" placeholder="Enter worker ID" required>
 
-            <!-- Mine Site -->
             <label>Mining Site</label>
 
             <select id="site" required>
@@ -56,12 +55,10 @@
 
             </select>
 
-            <!-- Location -->
             <label>Specific Location</label>
             <input type="text" id="location"
             placeholder="Tunnel / Section / Area" required>
 
-            <!-- Hazard -->
             <label>Hazard Type</label>
 
             <select id="hazard" required>
@@ -78,7 +75,6 @@
 
             </select>
 
-            <!-- Severity -->
             <label>Hazard Severity</label>
 
             <select id="severity" required>
@@ -92,15 +88,12 @@
 
             </select>
 
-            <!-- Date -->
             <label>Date of Incident</label>
             <input type="date" id="date" required>
 
-            <!-- Time -->
             <label>Time</label>
             <input type="time" id="time" required>
 
-            <!-- Description -->
             <label>Hazard Description</label>
 
             <textarea id="description"
@@ -108,11 +101,9 @@
             placeholder="Describe the incident or danger..."
             required></textarea>
 
-            <!-- File Upload -->
             <label>Upload Evidence (Optional)</label>
             <input type="file" id="file">
 
-            <!-- Emergency -->
             <div class="checkbox-area">
 
                 <input type="checkbox" id="emergency">
@@ -123,7 +114,6 @@
 
             </div>
 
-            <!-- Button -->
             <button type="submit">
                 Submit Safety Report
             </button>
